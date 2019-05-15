@@ -7,7 +7,7 @@ function DialogGames(props) {
     const { data } = props;
     function handleClose(e) {
         e.stopPropagation();
-        props.close();
+        props.close(); 
     }
     return (
         <Dialog open={props.open} onClose={handleClose}>
@@ -29,7 +29,7 @@ function DialogGames(props) {
                         <p><b>City</b>: {data.home_team.city}</p>
                         <p><b>Conference</b>: {data.home_team.conference}</p>
                         <p><b>Division</b>: {data.home_team.division}</p>
-                        <p><b>Home Team Score</b>: {data.home_team_score}</p>
+                        <p><b>Home Team Score</b>:{data.home_team_score}</p>
                     </Grid>
                     <Grid item lg={6} md={6} xs={12}>
                         <Typography variant="h5">
@@ -39,7 +39,7 @@ function DialogGames(props) {
                         <p><b>City</b>: {data.visitor_team.city}</p>
                         <p><b>Conference</b>: {data.visitor_team.conference}</p>
                         <p><b>Division</b>: {data.visitor_team.division}</p>
-                        <p><b>Visitor Team Score</b>: {data.visitor_team_score}</p>
+                        <p><b>Visitor Team Score</b>:{data.visitor_team_score}</p>
                     </Grid>
                 </Grid>
                 <Grid container justify="center">
